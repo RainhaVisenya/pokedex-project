@@ -6,15 +6,9 @@ import { PokemonListComponent } from './pokemon-list/pokemon-list.component';
 import { PokemonCardComponent } from './pokemon-card/pokemon-card.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    PokemonListComponent,
-    PokemonCardComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
+  declarations: [AppComponent, PokemonListComponent, PokemonCardComponent],
+  imports: [BrowserModule],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
