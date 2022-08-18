@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { PokemonService } from '../../_services/pokemon.service';
 
 @Component({
@@ -8,4 +8,6 @@ import { PokemonService } from '../../_services/pokemon.service';
 })
 export class PokemonListComponent {
   constructor(public pokemonService: PokemonService) {}
+
+  searchPokemon: any;
 }

@@ -1,4 +1,9 @@
+<div>
+  <p>AAAAAAAAAAAAAAAAAAAAAAAAA</p>
+  <span>Pesquise o pokemon</span>
+  <input type="text" name="search" [(ngModel)]="searchPokemon" />
+</div>
 <app-pokemon-card
-  *ngFor="let pokemon of pokemonService.pokemons"
+  *ngFor="let pokemon of (pokemonService.pokemons | filter: searchPokemon)"
   [pokemon]="pokemon"
 ></app-pokemon-card>
